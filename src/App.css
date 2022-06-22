@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, #daf5a5, #9feee7,rgb(142, 156, 228));
+    margin: 80px;
+}
+
+.App{
+    height: 80vh;
+    width: 80%;
+}
+
+.calculador {
+display : grid ;
+ justify-content: center;
+ align-content: center;
+ min-height: 100vh;
+ grid-template-columns: repeat(4, 80px);
+grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+}
+.calculador > button {
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1 rem;
+    font-weight:bold  ;
+    color: black;
+    border: 1px solid  rgb(255, 255, 255);
+    outline : none;
+    background-color : #fafafa75 ;
+    margin: 3px;
+}
+
+.calculador > button:hover {
+    background-color: #fafafa;
+}   
+.doble-espacio{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1 /-1;
+    margin-bottom: .5rem;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around ;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 10px;  
+    word-wrap: break-word;
+    word-break: break-all;
+    }
+    .output .numero-pasado{
+        color: #131313;
+        font-size: 1.5 rem;
+    }
+    .output .numero-nuevo{
+        color: #131313;
+        font-size: 1.5 rem; 
+    }
+    .tittle{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .tab{
+    background-color: #fafafa8e ;
+    width: 50%;
+    height: 50%;
+    margin-top: 130px;
+    color: blue;
+    text-align: center;
+    border-radius: 1rem;
+    border:1px solid blue;
+    
+}
